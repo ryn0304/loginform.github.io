@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+        *{margin:0; padding:0;}
+        li{list-style: none;}
+        a{text-decoration: none;
+            color:#333;
+            display: block;
+        }
+        legend{
+            position: relative;
+            left:-999999px;
+        }
+        fieldset{border:0;}
+        .wrap{width:375px;
+        background-color: rgb(128, 147, 148);
+        padding:33px 40px;}
+        .wrap01{
+            width:294px;
+            height:682px;
+        }
+        .wrap h2{
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        label{
+            font-size: 16px;
+            font-weight: bold;
+            display:inline-block;
+            width:99px;
+            height:44px;
+            line-height: 44px;
+           
+            margin-bottom: 10px;
+
+        }
+        input[type="text"],input[type="password"],input[type="number"]{
+            width:188px;
+            height:44px;
+            margin-left: 10px;
+            background-color: #E6E1E1;
+            border:0;
+            padding:5px;
+            box-sizing: border-box;
+
+            }
+        
+        .wrap p{
+            font-size: 14px;
+            color:#333;
+            width:210px;
+            height: 20px;
+            margin:0 auto;            
+            text-align:end;
+            letter-spacing: -1px; 
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+        .wrap .hong{
+            text-align: left;
+            width:150px;
+        }
+        .wrap .mail select{
+            width:65px;
+            height:44px;
+            font-size: 10px;
+        }
+        .wrap input[type="radio"]{
+            display: none;
+        }
+        .wrap input[type="radio"]+label{
+            width:82px;
+            height:44px;
+            border:1px solid black;
+            font-size: 14px;
+            text-align: center;
+            line-height: 44px;
+            font-weight: normal;
+            margin-right: 9px;
+            margin-left: 10px;
+        }
+        .wrap input[type="radio"]+label:last-child{
+            margin-right: 0;
+        }
+        .wrap input[type="radio"]:checked + label{
+            border: 2px solid #319D99;
+            background-color:snow;
+        }
+        .wrap .phone select{
+            width: 61px;
+            height: 44px;
+        }
+        .wrap .phone input[type="number"]{
+            width:117px;
+            
+        }
+        .wrap .adr input[type="button"]{
+            width:188px;
+            height:44px;
+            background-color: #4A4747;
+            color:white;
+            border:0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrap">
+    <form action="" method="POST">
+        <fieldset>
+            <legend>회원가입 폼작성</legend>
+            <h2>회원가입</h2>
+            
+            <div>
+                <label for="id">아이디(ID)</label>
+                <input type="text" id="id" placeholder="아이디를 입력해주세요">
+            </div>
+
+            <div>
+                <label for="pass">비밀번호</label>
+                <input type="password" id="pass" placeholder="비밀번호를 입력해주세요">
+            </div>
+
+            <div>
+                <label for="check">비밀번호확인</label>
+                <input type="password" id="check" placeholder="비밀번호를 입력해주세요">
+                <p>(영문,한글,숫자 조합8자리이상)</p>
+                
+            </div>
+
+            <div class="mail">
+                <label for="mail">이메일</label>
+                <input type="text" id="mail" placeholder="ABC123@naver.com">
+                <select>
+                    <option>naver.com</option>
+                    <option>gmail.com</option>
+                    <option>daum.net</option>
+                    <option>직접입력</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="name">이름</label>
+                <input type="password" id="name" placeholder="이름을 입력해주세요">
+                <p class="hong">성포함_(예시:홍길동)</p>
+            </div>
+
+            <div>
+                <label for="gen">성별</label>
+                <input type="radio" name="gneder" value="woman" id="gen">
+                <label for="gen">여성</label>
+                <input type="radio" name="gneder" value="man" id="gen">
+                <label for="gen">남성</label>
+            </div>
+
+            <div class="phone">
+                <label for="num">휴대전화</label>
+                <select>
+                    <option>010</option>
+                    <option>016</option>
+                    <option>070</option>
+                </select>
+                <input type="number" id="num">
+            </div>
+
+            <div class="adr">
+                <label for="add">주소</label>
+                <input type="button" value="주소찾기">
+                <input type="text" id="add">
+                <input type="text" id="add" placeholder="상세주소를 입력해주세요">
+            </div>
+
+            <div>
+                <label for="pass">생년월일</label>
+                <input type="number" id="pass" placeholder="예시:210607">
+            </div>
+
+           <div class="wrap_in">
+            <span>약관전체 동의하기</span><input type="radio">
+            <span>* 이용약관 동의</span><input type="radio">
+            <span>* 개인정보 취급방침 동의</span><input type="radio">
+            <span>마케팅정보 수신동의</span><input type="radio">
+           </div>
+
+           <input type="button" value="회원가입">
+        </fieldset>
+   
+    </form>
+    
+</div>
+</body>
+</html>

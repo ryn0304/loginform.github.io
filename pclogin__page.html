@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지</title>
+    <style>
+        *{margin:0; padding: 0;}
+        li{list-style: none;}
+        a{
+            text-decoration: none;
+            color:#333;
+            display: block;  
+        }
+        legend{
+            position:absolute;
+            left:-9999999px;
+        }
+        fieldset{
+            border:0;
+        }
+     
+        .wrap{width:1920px;
+            height:1080px;
+            background:url('img/little-bird\ big\ blur02.jpg') left center no-repeat;
+           
+            padding:0 98px;
+            box-sizing: border-box;
+            
+        }
+
+        .wrap_in1{
+            /* width:1445px; */
+            width: 1723px;
+            height:738px;
+            /* background:url('img/little-bird\ big\ blur02.jpg')center center/cover no-repeat; */
+            margin: 109px auto;
+            position: absolute;
+            box-shadow: -5px 0px 10px #333;
+        
+        }
+       .wrap>img{
+        position: relative;
+        left:1512px;
+        bottom:-217px;
+        transform: rotate3d(0,0,1,3deg);
+        overflow: hidden;
+       }
+       
+        .wrap_in2::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .wrap_in2{
+            width:862px;
+            height:738px;
+            background-color: blue;
+            float: left;
+        }
+
+        .wrap_in2 img{
+            width:100%;
+        }
+
+        .textbox{
+            width: 861px;
+            background-color: white;
+            height:738px;
+            float: left;
+        }
+
+        input[type="text"],input[type="password"]{
+            width:704px;
+            height:90px;
+            border-radius: 50px;
+            font-size: 24px;
+            color:#818080;
+            padding-left:49px;
+            box-sizing: border-box;
+            margin:0 58px;
+            border: 1px solid #707070;
+            background-color: #F1F1F1;
+            margin-bottom: 9px;
+            margin-top:15px;
+            }
+          
+        .textbox>div>label{
+            font-size: 26px;
+            font-weight: bold;
+            padding:16px 92px;
+            box-sizing: border-box;
+            color:#707070;
+           
+        }
+        .textbox .idea{
+            padding-top: 66px;
+
+        }
+        .textbox .pp{
+            font-size: 14px;
+            color:#707070;
+           margin-left: 92px;
+        }
+        .textbox p{
+            display: inline-block;
+        }
+        .wrap_in1 .textbox p:last-child{
+            margin-left: 378px;
+          
+          
+        }
+        .wrap_in1 .textbox p:nth-child(2){
+            padding-left: 21px;
+            box-sizing: border-box;
+        }
+        .sav{
+            padding-left: 92px;
+            margin-top:35px;
+        }
+        .sav input[type="checkbox"]{
+            width:50px;
+            height:50px;
+        }
+        .textbox .sav label{
+            padding:0;
+            margin-left: 17px;
+            line-height: 50px;
+        }
+        button{
+            width:301px;
+            height:64px;
+            line-height: 64px;
+            background-color: #FBF5F5;
+            border:0;
+            color:#707070;
+            font-size: 24px;
+            margin-top:36px;
+            margin-left:92px;
+            display:inline-block;
+            text-align: center;
+            
+           
+        }
+        .log{
+            margin-top:30px;
+            width:704px;
+            background-color: #319D99;
+            color: white;
+            font-weight: bold;
+            position:relative;
+            z-index: 100;
+            }
+
+          
+
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <form action="" method="POST">
+            <fieldset>
+                <legend>개인정보입력</legend>
+                <div class="wrap_in1">
+
+                    <div class="wrap_in2">
+                        <img src="img/bird clipping.jpg" alt="새사진"/>
+                    </div>
+
+                            <div class="textbox">
+
+                                <div class="idea">
+                                 <!-- <h1 class="idea">아이디</h1> -->
+                                <label for="email">아이디</label>
+                                <input type="text" id="email" placeholder="email@servce.com">
+                                </div>
+
+                                <div>   
+                                 <!-- <h1>비밀번호</h1> -->
+                                <label for="pass">비밀번호</label>
+                                <input type="password" id="pass">
+                                </div>
+
+                                <div class="pp">
+                                <p>아이디 찾기</p>
+                                <p>비밀번호 찾기</p> 
+                                <p>회원가입</p>
+                                </div>
+                           
+                            <div class="sav">
+                                <input type="checkbox">
+                                <label>아이디 저장하기</label>
+                            </div>
+
+                                <button>네이버로 시작하기</button>
+                                <button>카카오로 시작하기</button>
+                                <button class="log">로그인</button>
+                                
+                          </div><!-- .textbox end -->
+                          
+            </div><!-- .wrap_in1 end -->
+                   
+            </fieldset>
+        </form>
+        <img src="img/d.png" alt="배경투면꽃사진"/>
+    </div><!-- .wrap end -->
+</body>
+</html>
